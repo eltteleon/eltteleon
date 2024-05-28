@@ -1,73 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barcelona FC</title>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Inicio</a>
+  <a href="#" class="w3-bar-item w3-button">Funcion</a>
+  <a href="#" class="w3-bar-item w3-button">Precios</a>
+  <a href="#" class="w3-bar-item w3-button">Novedades</a>
+  <a href="#" class="w3-bar-item w3-button">Más info...</a>
+</nav>
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Inicio</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Plantilla 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Plantilla 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Plantilla 3</a>
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Inicio</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">¿Quienes somos?</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Función</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Precios</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Novedades</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Más información <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="secundaria06.html">Horarios</a>
+      <br>
+     <a href="secundaria07.html">Ubicación</a>
+      <br>
+      <a href="secundaria08.html">Marcas</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
   </div>
 </div>
 
-<!-- Header -->
-<header class="w3-container w3-red w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">Barcelona FC</h1>
-  <p class="w3-xlarge">El mejor equipo de fútbol</p>
-</header>
-
-<!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
-
-  <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Sobre el equipo</h3>
-    <p>El Barcelona FC es uno de los clubes de fútbol más exitosos del mundo, con una rica historia y una base de fanáticos apasionados en todo el mundo.</p>
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="imagenes/vigiliaPascual.jpg
+" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-middle w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">Iglesia Santo Domingo</button> 
+    <br> 
+    <a href="secundaria010.html"><strong>Plantilla</strong></a>
   </div>
+</div>
 
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Equipo" style="width:100%">
-      <h3>Lionel Messi</h3>
-      <p class="w3-opacity">Delantero</p>
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Oh snap! We just showed you a modal..</h4>
+      <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>Cool huh? Ok, enough teasing around..</p>
+      <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Equipo" style="width:100%">
-      <h3>Andrés Iniesta</h3>
-      <p class="w3-opacity">Centrocampista</p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Equipo" style="width:100%">
-      <h3>Gerard Piqué</h3>
-      <p class="w3-opacity">Defensa</p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Equipo" style="width:100%">
-      <h3>Luis Suárez</h3>
-      <p class="w3-opacity">Delantero</p>
-    </div>
+    <footer class="w3-container w3-teal">
+      <p>Modal footer</p>
+    </footer>
   </div>
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>¿Quienes somos?</h2>
+<p>Hola a todos, soy IñaKi del Pino e fundador de esta web sobre relojes,en esta tienda te podemos dar el servicio de relojes de alta gama como rolej,guess,lotus etc... tambien los tenemos de muchos materiales como plata ,oro y acero</p>
+
+<div class="w3-row"><br>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<h2>Nuestro objetivo</h2>
+<p>Nuestro objetivo es que la gente pueda llevar relojes de buena marca y buen material a un precio no muy elevado.</p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="imagenes/miserere-kNoH-U2101703344934is-1200x840@La Verdad.jpg" alt="Snow" style="width:100%">
+  <div class="w3-container">
+  <h3>Horarios</h3>
+  <h4>Abrimos algunos sábados</h4>
+  <p>Entre semana (De lunes a viernes estamos abiertos las 24 horas, en cambbio, los sábados abrimos de 9:00 a 13:00 y los domingos permanece cerrado.</p>
+ 
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="imagenes/HoraCambiarChip1.jpg" alt="Lights" style="width:100%">
+  <div class="w3-container">
+  <h3>Ubicación</h3>
+  <h4>Ven a visitarnos</h4>
+  <p>Nos encotramos en la plaza de españa (Cartagena). </p>
+ 
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="imagenes/238801.jpg" alt="Mountains" style="width:100%">
+  <div class="w3-container">
+  <h3>Marca</h3>
+  <h4>Todo tipo de diseños y modelos!</h4>
+  <p>Desde marcas muy conocidas y caras hasta marcas no tan conocidas pero de muy buena calidad </p>
+
+  </div>
+  </div>
+</div>
 
 </div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+<!-- Pricing Row -->
+<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+    <h2>Precios</h2>
+    <p>Nuestro relojes tienen precios alrededor de 100€ pero merece totalmente la pena, tambien tenemos relojes mas caros y mas baratos</p><br>
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">Rolex</p>
+          <img src="imagenes/beltri.jpg" style="width:100%">
+        </li>
+        <li class="w3-padding-16"><b>2024</b> Descuento de hasta un 15%</li>
+       
+        <li class="w3-theme-l5 w3-padding-24">
+        <a href="secundaria09.html"><strong>Cómpralo ya!!!</strong></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">Lotus</p>
+        </li>
+        <img src="imagenes/el-paraiso-celebraciones.jpg" style="width:100%">
+        <li class="w3-padding-16"><b>2024 / 2025</b> Descuento de hasta un 10%</li>
+        
+    <li class="w3-theme-l5 w3-padding-24">
+            <a href="secundaria09.html"><strong>No te lo pierdas!!</strong></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">Guess</p>
+        </li>
+        <img src="imagenes/mesa-cipreses-ok-4_3.jpg" style="width:100%">
+        <li class="w3-padding-16"><b>2024</b> Descuento de hasta un 20%</li>
+      
+        <li class="w3-theme-l5 w3-padding-24">
+                   <a href="secundaria09.html"><strong>Es increíble!!!</strong></a>
+        </li>
+      </ul>
+    </div>
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Novedades</span></div>
+      <h3>Contáctanos</h3>
+      <p>Accede a más información sobre los nuevos modelos en el siguiente formulario.</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Cartagena, Región de Murcia.</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +34 185859833</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  modasrelojesshow@hotmail.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+      <div class="w3-section">      
+        <label>Nombre</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Mensaje (Voluntario)</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>¿Te ha resultado sencillo rellenar el formulario?</label>
+ <a href="index03.html"><strong>Enviar respuesta</strong></a>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="imagenes/0a8dea96153eecce251bfdbe85080075.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
-  <h4>Síguenos en redes sociales</h4>
-  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-facebook-official"></i> Facebook</a>
-  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-instagram"></i> Instagram</a>
-  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-snapchat"></i> Snapchat</a>
-  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-pinterest-p"></i> Pinterest</a>
-  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-twitter"></i> Twitter</a>
-  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-linkedin"></i> Linkedin</a>
-  <p>© 2024 Barcelona FC</p>
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>¡Síguenos en nuestras redes sociales!</h4>
+ 
+  <a class="w3-button w3-large w3-teal" href="https://twitter.com/?lang=es" title="Twitter"><i class="fa fa-twitter"></i></a>
+
+  <a class="w3-button w3-large w3-teal" href="https://www.instagram.com/" title="Google +"><i class="fa fa-instagram"></i></a> 
+
+  <p>Cartagena <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Iglesia Santo Domingo 2024</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Ir a Inicio</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
 </footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 
 </body>
 </html>
